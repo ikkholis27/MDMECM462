@@ -1,0 +1,18 @@
+--cpu=Cortex-M4.fp.sp
+".\output\startup_gd32f30x_xd.o"
+".\output\system_gd32f30x.o"
+".\output\gd32f30x_gpio.o"
+".\output\gd32f30x_misc.o"
+".\output\gd32f30x_usart.o"
+".\output\gd32f30x_rcu.o"
+".\output\gd32f30x_timer.o"
+".\output\gd32f30x_fmc.o"
+".\output\gd32f30x_exti.o"
+".\output\gd32f30x_fwdgt.o"
+".\output\gd32f30x_it.o"
+".\output\usart.o"
+".\output\main.o"
+--library_type=microlib --strict --scatter ".\output\mcu_l716p.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\output\mcu_l716p.map" -o .\output\mcu_l716p.axf
